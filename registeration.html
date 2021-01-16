@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blood.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="success.css" type="text/css">
+    <title>Rss Tvndr Members Registeration</title>
+</head>
+<body class="regbody">
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Rss  ശാഖ  Tvndr സ്വയം സേവക രെജിസ്റ്ററേഷൻ ഫോം</h2>
+          <h5>താഴെ തന്നിരിക്കുന്ന ഫോം ഫിൽ ചെയ്തു സുബ്മിറ്റ് ബട്ടൺ ക്ലിക്ക് ചെയ്യുക </h5>
+          <h5>This Form Only For Thiruvanvadoor People</h5>
+        </div>
+        <div class="row">
+          
+          <div class="column">
+            <form id="submit-form" action="">
+              <label for="fname">പേര് </label>
+              <input type="text" id="fname" name="name" placeholder="Name" required>
+              <label for="duty">ചുമതല</label>
+              <select id="duty" name="duty">
+                <option value="no">ചുമതല ഇല്ല </option>
+                <option value="gadanayak">ഘടനയ്ക്</option>
+                <option value="shakakaryavah">ശാഖ കാര്യവാഹ് </option>
+                <option value="mukhyashikshak">മുഖ്യ ശിക്ഷക് </option>
+                <option value="shikshak">ശിക്ഷക് </option>
+                <option value="other">Other..</option>
+              </select>
+
+              <label for="bloodgroup">ബ്ലഡ് ഗ്രൂപ്പ് </label>
+              <select id="bloodgroup" name="bloodgroup" required>
+                <option value="no">തിരഞ്ഞെടുക്കുക </option>
+                <option value="A+">A+(-ve)</option>
+                <option value="A-">A-(-ve)</option>
+                <option value="B+">B+(-ve)</option>
+                <option value="B-">B(-ve)</option>
+                <option value="AB+">AB+(-ve)</option>
+                <option value="AB-">AB-(-ve)</option>
+                <option value="O+">O+(-ve)</option>
+                <option value="O-">O-(-ve)</option>
+              </select>
+
+              <label for="bloodgroup">ശാഖ തിരഞെടുക്കുക</label>
+              <select id="bloodgroup" name="bloodgroup" required>
+                <option value="no">തിരഞ്ഞെടുക്കുക </option>
+                <option value="sm">സംയുക്ത വിദ്യാർഥി ശാഖ </option>
+                <option value="tv">തരുണ വിദ്യാർഥി ശാഖ </option>
+                <option value="tvya">തരുണ വ്യവസായി ശാഖ </option>
+                <option value="pra">പ്രൗഡ ശാഖ </option>
+                <option value="other">Other</option>
+              </select>
+              <label for="phnumber">ഫോൺ നമ്പർ</label>
+              <input type="text" id="number" name="number" placeholder="+91 **********" required>
+              <label for="phnumber">വയസ്സ്</label>
+              <input type="text" id="age" name="age" placeholder="18" required>
+              <input type="submit" class="submitbtn" value="Submit">
+            </form>
+          </div>
+          <!--<div class="column">
+            <img src="./images/blood123 (2).jpg" style="width:100%">
+          </div> -->
+          <div id="success-box" >
+            <div class="dot"></div>
+            <div class="dot two"></div>
+            <div class="face">
+              <div class="eye"></div>
+              <div class="eye right"></div>
+              <div class="mouth happy"></div>
+            </div>
+            <div class="shadow scale"></div>
+            <div class="message"><h5 class="alert">താങ്കളുടെ രെജിസ്റ്ററേഷൻ ഫോം ഞങ്ങള്ക്ക് ലഭിച്ചിട്ടുണ്ട് താങ്കൾ ഈ പദ്ധതിയിൽ അംഗമായങ്കിൽ താങ്കളുടെ ഫോൺനമ്പറിലേക്കു ഒരു SMS വരുന്നതാണ് .</h5><h4>താഴെ കാണുന്ന Continue  ബട്ടൺ  ക്ലിക്ക് ചെയ്യുക</h4></div>
+            <button  class="button-box" onclick="success()"><h1 class="red">Continue</h1></button>
+          </div>
+        </div>
+      </div>
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx6XiXfyyJRSenXvajM5BTU5vIxH3MVwvlK6COq/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    document.getElementById("success-box").style.display="block";
+                      function success(){
+                        window.location.href="index.html"
+                      }
+                    
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+
+        function success(){
+             window.location.href="index.html"
+                      }
+
+      
+    </script>
+</body>
+</html>
