@@ -69,6 +69,22 @@ p {
 	transition-property: background-color, color;
 	z-index: 1;
 }
+
+.cta1 {
+	display: inline-block;
+	padding: 10px 30px;
+	color: rgb(7, 2, 2);
+	background-color: rgb(146, 134, 134);
+	border: 2px solid rgb(14, 13, 12);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+	z-index: 1;
+}
+
 .cta:hover {
 	color: white;
 	background-color: rgb(255, 125, 4);
