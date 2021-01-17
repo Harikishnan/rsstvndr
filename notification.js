@@ -9,8 +9,8 @@ btnClose1=document.getElementById("closeModal2");
 var myvar;
 var myvar2;
 function myFunction(){
-    myvar=setTimeout(shownotify, 30000);
-    myvar2=setTimeout(shownotify2, 50000);
+    myvar=setTimeout(shownotify, 10000);
+    myvar2=setTimeout(shownotify2, 30000);
 }
 
 
