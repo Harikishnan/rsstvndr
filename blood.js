@@ -19,6 +19,7 @@ e.preventDefault();
 
 // var user2 = document.getElementById('email');
 // var pass = document.getElementById('password');
+var phone = document.getElementById('ph')
 var userName = document.getElementById('fname');
 var age = document.getElementById('age');
 var blood = document.getElementById('bld')
@@ -29,13 +30,16 @@ firebase.auth().signInAnonymously().then(function(response){
     age:age.value,
     blood:blood.value,
     userId:firebase.auth().currentUser.uid,
+    phone : phone.value})
+    // email:firebase.auth().currentUser.email})
+    success();
 
     firebase.auth().signOut();
-//     user2.value='';
-//     pass.value='';
     userName.value='';
     age.value='';
     blood.value='';
+    phone.value='';
+  
 }).catch(function(error){
   var errorCode= error.code;
   var errorMessage=error.message;
@@ -43,6 +47,7 @@ firebase.auth().signInAnonymously().then(function(response){
   console.log(errorMessage);
   alert(errorMessage);
 });
+
 
 });
 
@@ -53,19 +58,23 @@ firebase.database().ref('users').on('value' , (data)=>{
   for (const user in users){
     document.getElementById('tableUsers').innerHTML+=`
     <tr>
-    <td>${users[user].userName}</td>
-    <td>${users[user].age}</td>
-    <td>${users[user].blood}</td>
+    <td><h5>${users[user].userName}</h5></td>
+    <td><h5>${users[user].age}</h5></td>
+    <td><h5>${users[user].blood}</h5></td>
     </tr>
     `;
   }
-
   //username=${users[user].userId}
 
 
 
 
 })
+
+function success(){
+  window.location.href="success.html"
+}
+
 
 
 
