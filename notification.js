@@ -15,5 +15,5 @@
 
 
  function shownotify (){
-     window.location.href="bloodregisteredmembers.html"
+     window.location.href="index1.html"
  }
