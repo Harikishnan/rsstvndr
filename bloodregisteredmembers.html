@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rss Tvndr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('./images/blood123\ \(2\).jpg'); background-repeat: no-repeat; background-size: contain;">
+      <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#home"><h1><span>Rss</span><span></span>Thiruvanvadoor</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="members.html" data-after="Service">Members</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+        <!-- shakas Section -->
+  <section id="shakas">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Give<span>Blood</span><br>Save<span>A Life</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info col-sm-10">
+            <p>നമസ്‌തെ താങ്കൾക്കും Rss Tvndr അവതരിപ്പിക്കുന്ന ബ്ലഡ് ഡോനെഷൻ പദ്ധതിയിൽ അംഗമാകാൻ താല്പര്യമുണ്ടങ്കിൽ താഴെ കാണുന്ന രജിസ്റ്റർ ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. </p>
+            <button class="cta1" onclick="document.getElementById('id01').style.display='block'" >Register</button>
+            <h1>Registered Members </h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Blood</th>
+                </tr>
+              </thead>
+              <tbody id="tableUsers">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+  <div id="id01" class="modal">
+
+  
+    <form class="modal-content animate" id="formReg" >
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+        <img src="./images/blood123 (2).jpg" alt="Avatar" class="avatar">
+      </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password</label>
+              <div class="col-sm-10 ">          
+                <input type="password" class="form-control" id="password" placeholder="Enter Any Password You Like" name="pwd" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="fname">Name</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="fname" placeholder="Enter Any Password You Like" name="fname" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="bld">Blood Group</label>
+              <div class="col-sm-10 ">          
+                  <select class="form-control" id="bld">
+                    <option>Choose..</option>
+                    <option>A+ve</option>
+                    <option>A-ve</option>
+                    <option>B+ve</option>
+                    <option>B-ve</option>
+                    <option>O+ve</option>
+                    <option>O-ve</option>
+                    <option>AB+ve</option>
+                    <option>AB-ve</option>
+                  </select>
+                </div>
+              </div>
+          <!---  <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Phone Number</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="ph" placeholder="Enter Your Phone Number" name="ph" required>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Age</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="age" placeholder="Enter Your Age" name="age"  required>
+              </div>
+            </div>
+          <!---  <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label><input  type="checkbox" name="remember" required>I Agree The Terms And Conditions</label>
+                </div>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <div class="col-sm-10">          
+                <button style="color: white; background-color: red;" type="submit" class="form-control" id="sbn" >Submit</button>
+              </div>
+            </div>
+    </form>
+  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>SS<span>T</span>VNDR</h1></div>
+      <h2>Connect With Rss</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+       <!--- <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div> -->
+      </div>
+      <p>Copyright © 2020 Rss Tvndr. All rights reserved </p>
+    </div>
+  </section>
+  <!-- End Footer -->
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+    <script src="blood.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
