@@ -9,11 +9,11 @@
  var myvar;
  var myvar2;
  function myFunction(){
-     myvar=setTimeout(shownotify, 2000);
+     myvar=setTimeout(shownotify, 5000);
 //     //myvar2=setTimeout(shownotify2, 5000000);//
  }
 
 
  function shownotify (){
-     window.location.href="update.html"
+     window.location.href="bloodregisteredmembers.html"
  }
