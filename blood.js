@@ -17,8 +17,8 @@
 document.getElementById('formReg').addEventListener('submit',function(e){
 e.preventDefault();
 
-var user2 = document.getElementById('email');
-var pass = document.getElementById('password');
+// var user2 = document.getElementById('email');
+// var pass = document.getElementById('password');
 var userName = document.getElementById('fname');
 var age = document.getElementById('age');
 var blood = document.getElementById('bld')
@@ -29,11 +29,10 @@ firebase.auth().signInAnonymously().then(function(response){
     age:age.value,
     blood:blood.value,
     userId:firebase.auth().currentUser.uid,
-    email:firebase.auth().currentUser.email})
 
     firebase.auth().signOut();
-    user2.value='';
-    pass.value='';
+//     user2.value='';
+//     pass.value='';
     userName.value='';
     age.value='';
     blood.value='';
