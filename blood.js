@@ -23,7 +23,7 @@ var userName = document.getElementById('fname');
 var age = document.getElementById('age');
 var blood = document.getElementById('bld')
 var dataemail =document.getElementById('dataemail');
-firebase.auth().createUserWithEmailAndPassword(user2.value, pass.value).then(function(response){
+firebase.auth().signInAnonymously().then(function(response){
   firebase.database().ref('users').push({
     userName: userName.value,
     age:age.value,
