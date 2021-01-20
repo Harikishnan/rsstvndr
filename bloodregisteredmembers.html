@@ -11,7 +11,7 @@
 <body style="background-image: url('./images/blood123\ \(2\).jpg'); background-repeat: no-repeat; background-size: contain;">
       <!-- Header -->
   <section id="header">
-    <div class="header container">
+    <div class="header ">
       <div class="nav-bar">
         <div class="brand">
           <a href="#home"><h1><span>Rss</span><span></span>Tvndr</h1></a>
@@ -36,7 +36,7 @@
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info col-sm-10">
-            <p>നമസ്‌തെ താങ്കൾക്കും Rss Tvndr അവതരിപ്പിക്കുന്ന ബ്ലഡ് ഡോനെഷൻ പദ്ധതിയിൽ അംഗമാകാൻ താല്പര്യമുണ്ടങ്കിൽ താഴെ കാണുന്ന രജിസ്റ്റർ ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. </p>
+            <h5>നമസ്‌തെ താങ്കൾക്കും Rss Tvndr അവതരിപ്പിക്കുന്ന ബ്ലഡ് ഡോനെഷൻ പദ്ധതിയിൽ അംഗമാകാൻ താല്പര്യമുണ്ടങ്കിൽ താഴെ കാണുന്ന രജിസ്റ്റർ ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. </h5>
             <button class="cta1" onclick="document.getElementById('id01').style.display='block'" >Register</button>
             <h1>Registered Members </h1>
             <table class="table">
@@ -45,6 +45,7 @@
                   <th>Name</th>
                   <th>Age</th>
                   <th>Blood</th>
+                  <th>See</th>
                 </tr>
               </thead>
               <tbody id="tableUsers">
@@ -58,17 +59,23 @@
   </section> 
 
 
-  <div id="id01" class="modal">
+  <div id="id01" class="modal col-sm-10" style="margin-bottom: 400px;">
 
   
-    <form class="modal-content animate" id="formReg" >
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+    <form class="modal-content animate col-sm-10" id="formReg" >
+      <div class="imgcontainer col-sm-10">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="fname">Name</label>
               <div class="col-sm-10 ">          
-                <input type="text" class="form-control" id="fname" placeholder="Enter Any Password You Like" name="fname" required>
+                <input type="text" class="form-control" id="fname" placeholder="Enter Your Name" name="fname" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="ph">Phone Number</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="ph" placeholder="Enter Your Phone Number" name="ph" required>
               </div>
             </div>
             <div class="form-group">
@@ -108,7 +115,7 @@
             </div> -->
             <div class="form-group">
               <div class="col-sm-10">          
-                <button style="color: white; background-color: red;" type="submit" class="form-control" id="sbn" >Submit</button>
+                <button style="color: white; background-color: red;" type="submit" class="form-control" id="sbn">Submit</button>
               </div>
             </div>
     </form>
@@ -150,6 +157,11 @@ window.onclick = function(event) {
     </div>
   </section>
   <!-- End Footer -->
+  <script>
+    function success(){
+      window.location.href="success.html"
+    }
+  </script>
     <script src="app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
     <script src="blood.js"></script>
