@@ -21,7 +21,7 @@ e.preventDefault();
   
 var button = document.getElementById("sbn");
 
-button.innerHTML='Please Wait';
+button.innerHTML='Please Wait....';
 
 // var user2 = document.getElementById('email');
 // var pass = document.getElementById('password');
