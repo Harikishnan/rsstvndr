@@ -23,6 +23,10 @@ var button = document.getElementById("sbn");
 
 button.innerHTML='Please Wait....';
 
+  var text1 = document.getElementById("conform");
+  
+  text1.style.display="block";
+
 // var user2 = document.getElementById('email');
 // var pass = document.getElementById('password');
 var phone = document.getElementById('ph')
