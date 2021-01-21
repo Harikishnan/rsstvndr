@@ -32,7 +32,7 @@ firebase.auth().signInAnonymously().then(function(response){
     age:age.value,
     blood:blood.value,
     role:role.value,
-    shaka:shaka.value
+    shaka:shaka.value,
     userId:firebase.auth().currentUser.uid,
     phone : phone.value})
     // email:firebase.auth().currentUser.email})
@@ -43,6 +43,8 @@ firebase.auth().signInAnonymously().then(function(response){
     age.value='';
     blood.value='';
     phone.value='';
+    role.value='';
+    shaka.value='';
   
 }).catch(function(error){
   var errorCode= error.code;
