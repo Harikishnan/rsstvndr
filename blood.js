@@ -76,6 +76,7 @@ firebase.database().ref('users').on('value' , (data)=>{
     <td><h5>${users[user].role}</h5></td>
     </tr>
     `;
+     document.getElementById('loading').style.display="none";
   }
   //username=${users[user].userId}
 
