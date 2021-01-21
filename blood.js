@@ -24,11 +24,15 @@ var userName = document.getElementById('fname');
 var age = document.getElementById('age');
 var blood = document.getElementById('bld')
 var dataemail =document.getElementById('dataemail');
+var role =document.getElementById('role');
+var shaka =document.getElementById('shaka');
 firebase.auth().signInAnonymously().then(function(response){
   firebase.database().ref('users').push({
     userName: userName.value,
     age:age.value,
     blood:blood.value,
+    role:role.value,
+    shaka:shaka.value
     userId:firebase.auth().currentUser.uid,
     phone : phone.value})
     // email:firebase.auth().currentUser.email})
@@ -61,6 +65,7 @@ firebase.database().ref('users').on('value' , (data)=>{
     <td><h5>${users[user].userName}</h5></td>
     <td><h5>${users[user].age}</h5></td>
     <td><h5>${users[user].blood}</h5></td>
+    <td><h5>${users[user].role}</h5></td>
     </tr>
     `;
   }
