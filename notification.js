@@ -13,7 +13,7 @@
 //     //myvar2=setTimeout(shownotify2, 5000000);//
  }
 function myfunction2(){
-    myvar2=setTimeout(shownotify2,10000);
+    myvar2=setTimeout(shownotify2,5000);
 }
 
 function shownotify2(){
