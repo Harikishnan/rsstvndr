@@ -17,7 +17,7 @@ function myfunction2(){
 }
 
 function shownotify2(){
-    document.getElementById('home').style.display='block';
+    document.getElementById("main").style.display='block';
 }
 
 
