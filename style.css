@@ -87,8 +87,8 @@ p {
 	display: inline-block;
 	padding: 10px 30px;
 	color:black;
-	background-color:rgb(240, 87, 87);
-	border: 2px solid rgb(252, 48, 48);
+	background-color:transperent;
+	border: 2px solid orange;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
