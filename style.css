@@ -83,6 +83,20 @@ p {
 	transition-property: background-color, color;
 	z-index: 1;
 }
+.cta2 {
+	display: inline-block;
+	padding: 10px 30px;
+	color:black;
+	background-color:rgb(240, 87, 87);
+	border: 2px solid rgb(252, 48, 48);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+	z-index: 1;
+}
 .cta:hover {
 	color: white;
 	background-color: rgb(255, 125, 4);
