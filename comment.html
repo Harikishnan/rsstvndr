@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijnanam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('./images/blood123\ \(2\).jpg'); background-repeat: no-repeat; background-size: contain;">
+      <!-- Header -->
+  <section id="header">
+    <div class="header ">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html"><h1><span>V</span>ijnanam</h1></a>
+        </div>
+        <div class="nav-list">
+        
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+        <!-- shakas Section -->
+  <section id="shakas">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Vijnanam<span><br>Comment</span><br>Section</h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info col-sm-10">
+            <h5>If You Have Any Question About Vijnanam Comment Your Question By Clicking The Below Button</h5>
+            <button class="cta1" onclick="document.getElementById('id01').style.display='block'" >Comment</button>
+            <h1>Latest Comments</h1>
+            <p id="loading">Loading Please Wait..</p>
+            <h2 style="float: left;">Questions Or Comments and Replies</h2>
+            <div id="screen">
+
+            </div>
+            <!-- <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Blood</th>
+                  <th>See</th>
+                </tr>
+              </thead>
+              <tbody id="tableUsers">
+                <p id="loading">Loading Please Wait...</p>
+              </tbody>
+            </table> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+  <div id="id01" class="modal col-sm-10" style="margin-bottom: 400px;">
+
+  
+    <form class="modal-content animate col-sm-10" id="formReg" >
+      <div class="imgcontainer col-sm-10">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="fname">Name</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="fname" placeholder="Enter Your Name" name="fname" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="ph">Phone Number</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="ph" placeholder="Enter Your Phone Number" name="ph" required>
+              </div>
+            </div>
+          <!---  <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Phone Number</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="ph" placeholder="Enter Your Phone Number" name="ph" required>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Comment or Question</label>
+              <div class="col-sm-10 ">          
+                <textarea rows="4" cols="50" type="text" class="form-control" id="comment" placeholder="Write Your Question Or Comment Here.." name="comment"  required></textarea>
+                </div>
+            </div>
+            <input type="text" name="reply" id="reply" value="Replying Soon.." style="display: none;">
+          <!---  <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label><input  type="checkbox" name="remember" required>I Agree The Terms And Conditions</label>
+                </div>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <div class="col-sm-10">          
+                <button  style="color: white; background-color: red;" type="submit" class="form-control" id="sbn">Submit</button>
+              </div>
+            </div>
+    </form>
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1>Rss Tvndr</h1></div>
+      <h2>Connect With Rsstvndr</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+       <!--- <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div> -->
+      </div>
+      <p>Copyright © 2021 Rsstvndr. All rights reserved </p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script>
+    function success(){
+      window.location.href="success.html"
+    }
+  </script>
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase.js"></script>
+    <script src="comment.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
