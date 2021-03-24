@@ -85,17 +85,20 @@ p {
 }
 .cta2 {
 	display: inline-block;
-	padding: 10px 30px;
-	color:black;
-	background-color:transperent;
-	border: 2px solid orange;
-	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	margin-top: 30px;
+	padding: 10px 20px;
+	color: black;
+	font-weight: 900;
+	background-color: transparent;
+	border: 2px solid rgb(255, 125, 4);
+	letter-spacing: 1px;
 	transition: .3s ease;
 	transition-property: background-color, color;
 	z-index: 1;
+}
+
+
+.cta2:hover{
+	background-color: rgb(250, 81, 2);
 }
 .cta:hover {
 	color: white;
