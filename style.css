@@ -94,11 +94,13 @@ p {
 	transition: .3s ease;
 	transition-property: background-color, color;
 	z-index: 1;
+	font-size:12px;
 }
 
 
 .cta2:hover{
 	background-color: rgb(250, 81, 2);
+	color: white;
 }
 .cta:hover {
 	color: white;
