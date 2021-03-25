@@ -5,62 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rss Tvndr</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-      <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#home"><h1><span>Rss</span><span></span>Thiruvanvadoor</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="index.html" data-after="Home">Home</a></li>
-            <li><a href="#shakas" data-after="Service">Karya Kari</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
-        <!-- shakas Section -->
+
   <section id="shakas">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title">Karyakari<span>Team</span></h1>
+        <h1 class="section-title">Karyakari<br><span>Team</span></h1>
+        <p style="text-align: center;">കാര്യകാരി റിപ്പോർട്ട് ഫിൽ ചെയ്യുന്നതിനായി<br> താഴെ കാണുന്ന ബട്ടൻ Click ചെയ്യുക.</p>
+        <button class="cta1" onclick="document.getElementById('id01').style.display='block'" style="background-color: orange;border: 2px solid #ff7d00;">Fill ചെയ്യുക</button>
+
       </div>
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
-            <h1>Next Karyakari</h1>
-            <h2>17/01/2021 (today)</h2>
-            <h2>Place: Rajeevbhavan</h2>
-              <h2>Time: 12:00 pm</h2>
-            <p>Coming: Sreenish G (Vibhag Pracharak)</p>
+            <h1>Karyakari Reports 2021</h1>
+
+
           </div>
-          <div class="project-img">
+          <!-- <div class="project-img">
             <img src="./images/dr.ji.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>17/01/2021 Karyakari Details</h1>
-            <h2>Comming: Sreeneesh G (Vibhag Pracharak)</h2>
-            <h2>Place: Rajeev Bhavan Thiruvanvadoor</h2>
-            <p>1)Anathu.Anil(Akhil)</p>
-            <p>2)Anathu.H (Kannan)</p>
-            <p>3)Hari Krishnan</p>
-            <p>4)Rahul Rajeev</p>
-            <p>5)Nandhu (Abhijith)</p>
-            <p>Other Peoples Who Will Be Invited To Join</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section> 
+  <div id="id01" class="modal col-sm-10" style="margin-bottom: 400px;">
+    <form class="modal-content animate col-sm-10" id="karyakari" style="padding-top: 20px;">
+      <div class="imgcontainer col-sm-10">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+      <h3 style="text-align: center;">കാര്യകാരി റിപ്പോർട്ട്</h3>
+      <p>താഴെ കാണുന്ന form കാര്യകാരിയിൽ പങ്കെടുത്ത  ഒരു കാര്യകർത്താവ് fill ചെയ്യുക.</p>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="fname">പേര്</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="fname" placeholder="Enter Your Name" name="fname" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="dt">Date</label>
+              <div class="col-sm-10 ">          
+                <input type="date" class="form-control" id="dt" placeholder="Enter Current Date" name="dt" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pl">കാര്യകാരി നടക്കുന്ന സ്ഥലം</label>
+              <div class="col-sm-10 ">          
+                <input type="text" class="form-control" id="pl" placeholder="Place" name="pl" required>
+              </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="num">വരേണ്ടത് എത്ര പേർ</label>
+                <div class="col-sm-10 ">          
+                  <input type="text" class="form-control" id="num" placeholder="10" name="num" required>
+                </div>
+                </div>
+                <div class="form-group">
+              <label class="control-label col-sm-2" for="role">ചുമതല</label>
+              <div class="col-sm-10 ">          
+                  <select class="form-control" id="role">
+                    <option>തിരഞ്ഞെടുക്കുക</option>
+                    <option>മുഖ്യ ശിക്ഷക് </option>
+                    <option>ശിക്ഷക്</option>
+                    <option>ഘടനയ്ക്</option>
+                    <option>ശാഖാ കാര്യവാഹ്</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+                <div class="form-group">
+              <label class="control-label col-sm-2" for="shaka">ശാഖാ തിരഞ്ഞെടുക്കുക</label>
+              <div class="col-sm-10 ">          
+                  <select class="form-control" id="shaka">
+                    <option>തിരഞ്ഞെടുക്കുക</option>
+                    <option>സംയുക്ത വിദ്യാർഥി ശാഖാ</option>
+                    <option>തരുണ വിദ്യാർഥി ശാഖാ</option>
+                    <option>തരുണ വ്യവസായി ശാഖാ</option>
+                    <option>പ്രൗഢ ശാഖാ</option>
+                    <option>All</option>
+                  </select>
+                </div>
+              </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="pr">വന്നവരുടെ പേര്</label>
+                  <div class="col-sm-10 ">
+                    <textarea name="pr" id="pr" cols="30" rows="10" style="height: 150px; width: 280px;" placeholder="Example: Hari,Akhil,Rahul"></textarea>
+                  </div>
+                </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="tx">നിശ്ചയിച്ച കാര്യങ്ങൾ</label>
+                <div class="col-sm-10 ">
+                  <textarea name="tx" id="tx" cols="30" rows="10" style="height: 150px; width: 280px;" placeholder="Write Here..."></textarea>
+                </div>
+              </div>
+               <div class="form-group">
+              <div class="col-sm-10">          
+                  <p id="conform" style="display:none;">Analysing Your Data Please Wait Few Seconds To Continue...</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">          
+                <button style="color: white; background-color: red;" type="submit" class="form-control" id="sbn">Submit</button>
+              </div>
+            </div>
+    </form>
+    </div>
+<script>
+    // Get the modal
+var modal = document.getElementById('id01');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
   
   <!-- Footer -->
   <section id="footer">
@@ -81,10 +144,12 @@
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
         </div> -->
       </div>
-      <p>Copyright © 2020 Rss Tvndr. All rights reserved </p>
+      <p>Copyright © 2021 Rss Tvndr. All rights reserved </p>
     </div>
   </section>
   <!-- End Footer -->
-    <script src="app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>

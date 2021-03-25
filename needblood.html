@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rsstvndr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <form class="modal-content animate col-sm-10" id="needblood" style="padding-top: 20px;">
+        <div class="imgcontainer col-sm-10">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <h3 style="text-align: center;">Blood Donation <span><p>Powered By,Rsstvndr</p></span></h3>
+        <p style="text-align: center;">താഴെ കാണുന്ന form fill ചെയ്യുക.</p>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">പേര്</label>
+                <div class="col-sm-10 ">          
+                  <input type="text" class="form-control" id="fname" placeholder="Enter Your Name" name="fname" >
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="ph">Phone Number</label>
+                <div class="col-sm-10 ">          
+                  <input type="text" class="form-control" id="ph" placeholder="Phone Number" name="ph" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="pl">Place</label>
+                <div class="col-sm-10 ">          
+                  <input type="text" class="form-control" id="pl" placeholder="Place" name="pl" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="bd">Which Blood Group You Want?..</label>
+                    <div class="col-sm-10 ">          
+                      <input type="text" class="form-control" id="bd" placeholder="O+ve" name="bd" required>
+                    </div>
+                    </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pr">Extra Details (Optional)</label>
+                    <div class="col-sm-10 ">
+                      <textarea class="form-control" name="pr" id="pr" cols="30" rows="10" style="height: 102px; width: 100%;" placeholder="Write Here..."></textarea>
+                    </div>
+                  </div>
+                 <div class="form-group">
+                <div class="col-sm-10">          
+                    <p id="conform" style="display:none;">Analysing Your Data Please Wait Few Seconds To Continue...</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-10">          
+                  <button style="color: white; background-color: red;" type="submit" class="form-control" id="sbn">Submit</button>
+                </div>
+              </div>
+      </form>
+        <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>SS<span>T</span>VNDR</h1></div>
+      <h2>Connect With Rss</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+       <!--- <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div> -->
+      </div>
+      <p>Copyright © 2021 Rss Tvndr. All rights reserved </p>
+    </div>
+  </section>
+  <!-- End Footer -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+      <script src="neeedblood.js"></script>
+</body>
+</html>
