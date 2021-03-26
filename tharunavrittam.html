@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rss Tvndr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="tharuna" class="modal col-sm-10" style="margin-bottom: 400px;">
+        <form class="modal-content animate col-sm-10" id="tharunavidhyardhivrittam" style="padding-top: 20px;">
+            <div class="imgcontainer col-sm-10">
+                <span onclick="document.getElementById('tharuna').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>    
+            <h3 style="text-align: center;">മാർച്ച് മാസ വൃത്തം <br> തരുണവിദ്യാർത്ഥി ശാഖ</h3>
+            <p style="text-align: center;">താഴെ കാണുന്ന form fill ചെയ്യുക.</p>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">പേര്</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="fname1" placeholder="Enter Your Name" name="fname"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="ph">Phone Number</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="ph1" placeholder="Enter Phone Number" name="ph"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="role">ചുമതല</label>
+                <div class="col-sm-10 ">
+                    <select class="form-control" id="role1">
+                        <option>തിരഞ്ഞെടുക്കുക</option>
+                        <option>മുഖ്യ ശിക്ഷക് </option>
+                        <option>ശിക്ഷക്</option>
+                        <option>ഘടനയ്ക്</option>
+                        <option>ശാഖാ കാര്യവാഹ്</option>
+                    </select>
+                </div>
+            </div>
+            <hr><br><br>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="total">ശാഖയിൽ ആകെയുള്ള സ്വയം സേവകരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="total1" placeholder="Write here..." name="total"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="recent">ശാഖയിൽ സ്ഥിരമായി വരുന്ന സ്വയം സേവകരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="recent1" placeholder="Write here..." name="recent"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="students">വിദ്യാർത്ഥി ശ്രേണി മുഴുവൻ സ്വയം സേവകരുടെ
+                    എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="students1" placeholder="Write here..." name="students"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="karyakarinum">നടന്ന കാര്യകാരികളുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="karyakarinum112" placeholder="4" name="karyakarinum"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="karyakarinum1">കാര്യകാരിയിൽ പങ്കെടുക്കേണ്ടവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="karyakarinum1112" placeholder="Write here..."
+                        name="karyakarinum1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="karyakarinum2">കാര്യകാരിയിൽ പങ്കെടുത്തവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="karyakarinum21" placeholder="Write here..."
+                        name="karyakarinum2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="manadalnum1">മണ്ഡൽവർഗ് വരേണ്ടവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="manadalnum11" placeholder="Write here..."
+                        name="manadalnum1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="manadalnum2">മണ്ഡൽവർഗ് വന്നവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="manadalnum21" placeholder="Write here..."
+                        name="manadalnum2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="manadalnum3">മണ്ഡൽ ബൈoക് വരേണ്ടവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="manadalnum31" placeholder="Write here..."
+                        name="manadalnum3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="manadalnum4">മണ്ഡൽ ബൈoക് വന്നവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="manadalnum41" placeholder="Write here..."
+                        name="manadalnum4" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="manadalnum5">മണ്ഡൽ സംഗിക്കിൽ വന്നവരുടെ എണ്ണം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="manadalnum51" placeholder="Write here..."
+                        name="manadalnum5" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="gangajali">ഗംഗാഞ്ജലി എത്ര</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="gangajali12" placeholder="Write here..."
+                        name="gangajali" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="gangajali1">ഗംഗാഞ്ജലി തന്നവർ എത്ര</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="gangajali11" placeholder="Write here..."
+                        name="gangajali1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="sevanam">സേവനം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" id="sevanam1" placeholder="Write here..." name="sevanam"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="sambarkkam">അമ്പതു വീട് സമ്പർക്കം</label>
+                <div class="col-sm-10 ">
+                    <input type="text" name="yes" id="yes1" class="form-control" placeholder="Write here.." required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="sharirik1">അനി.ശാരീരിക് എത്ര</label>
+                <div class="col-sm-10 ">
+                    <input type="text" name="sharirik1" id="sharirik1" class="form-control" placeholder="Write here.."
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="bhawdhik123">അനി.ബൗദ്ധിക് എത്ര</label>
+                <div class="col-sm-10 ">
+                    <input type="text" name="bhawdhik123" id="bhawdhik123" class="form-control"
+                        placeholder="Write here.." required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <p id="conform1" style="display:none;">Analysing Your Data Please Wait Few Seconds To Continue...
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <button style="color: white; background-color: red;" type="submit" class="form-control"
+                        id="sbn1">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>R</span>SS<span>T</span>VNDR</h1>
+            </div>
+            <h2>Connect With Rss</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                </div>
+                <!--- <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div> -->
+            </div>
+            <p>Copyright © 2021 Rss Tvndr. All rights reserved </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="vrittam.js"></script>
+</body>
+
+</html>
