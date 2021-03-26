@@ -52,37 +52,6 @@
 getDetailsSamyuktha();
 
 
-function getDetailsTharunaVidhyardhi (){
-  docRef2.doc('details').get().then(function (doc){
-      if(doc && doc.exists){
-          const myData = doc.data();
-          document.getElementById('smtotal').innerText += " : " + myData.total1;
-          document.getElementById('smrecent').innerText += " : " + myData.recent1;
-          document.getElementById('smstudents').innerText += " : " + myData.students1;
-          document.getElementById('smkaryakarinum').innerText += " : " + myData.karyakarinum1;
-          document.getElementById('smkaryakarinum1').innerText += " : " + myData.karyakarinum11;
-          document.getElementById('smkaryakarinum2').innerText += " : " + myData.karyakarinum21;
-          document.getElementById('smmanadalnum1').innerText += " : " + myData.manadalnum11;
-          document.getElementById('smmanadalnum2').innerText += " : " + myData.manadalnum21;
-          document.getElementById('smmanadalnum3').innerText += " : " + myData.manadalnum31;
-          document.getElementById('smmanadalnum4').innerText += " : " + myData.manadalnum41;
-          document.getElementById('smmanadalnum5').innerText += " : " + myData.manadalnum51;
-          document.getElementById('smgangajali').innerText += " : " + myData.gangajali1;
-          document.getElementById('smgangajali1').innerText += " : " + myData.gangajali11;
-          document.getElementById('smsevanam').innerText += " : " + myData.sevanam1;
-          document.getElementById('smyes').innerText += " : " + myData.yes1;
-          document.getElementById('smsharirik').innerText += " : " + myData.sharirik1;
-          document.getElementById('smbhawdhik').innerText += " : " + myData.bhawdhik1;
-
-      }
-  }).catch((error)=>{
-    alert("Error Occured!..   Details:" + error)
-  })
-}
-
-
-getDetailsTharunaVidhyardhi();
-
 
 
 
