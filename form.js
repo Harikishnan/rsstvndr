@@ -55,6 +55,7 @@ function getKaryakariDetails(){
   docRef.doc('details').get().then(function (doc) {
     if(doc && doc.exists){
       document.getElementById('loading').style.display="none";
+      document.getElementById('textcontainer').style.display="block";
       const Data1 = doc.data();
       document.getElementById('text1').innerText +=  "കാര്യകാരി: " + Data1.shaka;
       document.getElementById('text2').innerText += "തീയതി: " +  Data1.date;
