@@ -21,6 +21,7 @@
   function getDetailsSamyuktha (){
     docRef1.doc('details').get().then(function (doc){
         if(doc && doc.exists){
+            documnet.getElementById('loading').style.display="none";
             const myData = doc.data();
             document.getElementById('smtotal').innerText += " : " + myData.total;
             document.getElementById('smrecent').innerText += " : " + myData.recent;
@@ -42,9 +43,11 @@
             document.getElementById('smsharirik').innerText += " : " + myData.sharirik;
             document.getElementById('smbhawdhik').innerText += " : " + myData.bhawdhik;
 
+        }else{
+          document.getElementById('content').style.display="none";
         }
     }).catch((error)=>{
-      alert("Error Occured!..   Details:" + error)
+      alert("Error Occured!..   Details:" + error);
     })
 }
 
