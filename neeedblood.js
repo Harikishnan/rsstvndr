@@ -26,13 +26,15 @@ document.getElementById('needblood').addEventListener('submit' , function submit
     var phone = document.getElementById('ph');
     var blood = document.getElementById('bd');
     var text = document.getElementById('pr');
+    var duedate = document.getElementById('duedate'); 
 
     docRef.doc().set({
         name : name.value,
         place : place.value,
         blood : blood.value,
         phone : phone.value,
-        text  : text.value
+        text  : text.value,
+        duedate : duedate.value
     }).then(()=>{
         console.log("data saved");
         window.location.href="success.html";
