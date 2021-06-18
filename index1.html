@@ -11,14 +11,14 @@
   <title>Rss Tvndr</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body onload="myfunction2()">
+<body onload="site()">
   <h3 style="margin-top:20%;text-align:center;">ക്ഷെമിക്കണം, ഈ സൈറ്റ് ഇപ്പോൾ നിലവിൽ ഇല്ല.താഴെ കാണുന്ന ബട്ടൺ Click ചെയ്താൽ നിലവിൽ ഉള്ള സൈറ്റിലേക്ക് പോകാം.</h3>
   <a style="width:80%;margin-left:10%;background-color:orange;" href="https://rsstvndrapp.herokuapp.com/" class="cta1">Click To Go To That Site</a>
   
   <script>
-  window.addEventListener("load",()=>{
-    window.location.redirect = "https://rsstvndrapp.herokuapp.com"
-  })
+function site(){
+  window.location.href = "https://rsstvndrapp.herokuapp.com"
+}
   </script>
 </body>
 </html>
